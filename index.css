@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* COLORS */
+    --PRIMARYCOLOR: #faea07;
+    --BACKGROUNDLIGHT: rgba(0, 0, 0, 0.3);
+    --BACKGROUND: #000;
+    --TEXTLIGHT: #FFF;
+    --DANGER: #f7a205;
+    --OCEAN: #4169E1;
+
+    /* CONTAINER */
+    --CONTAINERLG: 89%;
+    --CONTAINERMD: 91%;
+    --CONTAINERSM: 96%;
+
+    /* TRANSITION */
+    --TRANSITION: all 0.8s;
+}
+
+/* UTILITIES */
+
+.container {
+    width: var(--CONTAINERLG);
+    margin: 0 auto;
+}
+
+.btn {
+    font-size: 1.2rem;
+    color: var(--TEXTLIGHT);
+    background: transparent;
+    padding: 1rem 1.5rem;
+    transition: var(--TRANSITION);
+}
+
+.btn:hover {
+    border: 1px solid var(--PRIMARYCOLOR);
+    color: var(--PRIMARYCOLOR);
+    background: transparent;
+}
+
+.btnPrimary {
+    background: var(--DANGER);
+    border: 1px solid #00000000;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.align {
+    display: inline;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+body {
+    min-height: 150vh;
+    background: linear-gradient(to top, var(--OCEAN), var(--BACKGROUND));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: var(--TEXTLIGHT);
+    background: var(--BACKGROUNDLIGHT);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+}
+
+.navContainer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navContainer li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.navContainer li:first-child {
+    margin-right: auto;
+}
+
+.navContainer li:first-child a {
+    margin-right: auto;
+    color: var(--PRIMARYCOLOR);
+}
+
+.navContainer li:first-child a {
+    font-size: 2rem;
+}
+
+.navContainer a {
+    text-decoration: none;
+    color: var(--TEXTLIGHT);
+    font-size: 1.2rem;
+    transition: var(--TRANSITION);
+}
+
+.navContainer a:hover {
+    color: var(--OCEAN);
+}
+
+/* MAIN */
+
+section p {
+    margin-bottom: 20px;
+}
+
+
+.section1 {
+    margin-top: 60px;
+    padding: 1rem 0;
+}
+
+.section1 button {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.service {
+    border: 1px solid black;
+    min-height: 40vh;
+    border-radius: 10px;
+    padding: 10px 5px;
+    opacity: 0.5;
+}
+
+.service:hover {
+    opacity: 1;
+}
+
+.servicebtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section4 p {
+    text-align: center;
+}
+
+.section4 form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section4 label {
+    font-size: 1.2rem;
+}
+
+.section4 input {
+    margin-bottom: 20px;
+    padding: 0.35rem;
+}
+
+.section4 .btn {
+    margin: 20px 40px;
+    padding: 0.5rem 1rem;
+}
+
+section {
+    color: var(--TEXTLIGHT);
+    min-height: 50vh;
+}
+
+/* FOOTER */
+
+footer {
+    padding-top: 30px;
+    background: var(--BACKGROUND);
+    color: var(--TEXTLIGHT);
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr;
+    padding: 20px 0;
+}
+
+.footer1 ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer1 li {
+    display: flex;
+}
+
+footer a {
+    color: var(--TEXTLIGHT);
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.footer2Links {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.footer2Links a:hover {
+    color: var(--PRIMARYCOLOR);
+}
+
+.footer3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footerCopyright {
+    position: static;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* FOOTER FORM */
+
+.footer3 input {
+    padding: 0.4rem 0;
+    margin-bottom: 15px;
+}
+
+.footer3 .btn {
+    padding: 0.4rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
